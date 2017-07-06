@@ -1,0 +1,14 @@
+@import 'flexbox-grid-mixins/sass/flexbox-grid-mixins';
+
+.search-page{
+    @include grid(
+      $justify-content: center
+    );
+    background-color: #FEE600;
+}
+
+.search-bar-container{
+    @include grid-col(
+      $col: 10
+    );
+}

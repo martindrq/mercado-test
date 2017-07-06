@@ -1,0 +1,16 @@
+@import 'flexbox-grid-mixins/sass/flexbox-grid-mixins';
+
+
+.item-page-container{
+    @include grid(
+      $justify-content: center
+    );
+    flex-wrap: wrap;
+
+}
+
+.item-page-container > div{
+    @include grid-col(
+      $col: 10
+    );
+}

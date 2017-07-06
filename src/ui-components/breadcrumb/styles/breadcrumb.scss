@@ -1,0 +1,26 @@
+@import '../../common/styles/ml-element.scss';
+
+
+.breadcrumb{
+    @extend .ml-element;
+    .list{
+      padding-left: 0;
+      list-style: none;
+      font-size: 14px;
+      color:#999;
+      .item{
+        display: inline;
+        &:after{
+          content: "›";
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        &:last-of-type{
+          color: #666;
+        }
+        &:last-of-type:after{
+          content: "";
+        }
+      }
+    }
+}

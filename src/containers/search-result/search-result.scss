@@ -1,0 +1,14 @@
+@import 'flexbox-grid-mixins/sass/flexbox-grid-mixins';
+
+.result-page-container{
+    @include grid(
+      $justify-content: center
+    );
+    flex-wrap: wrap;
+}
+
+.result-page-container > div{
+    @include grid-col(
+      $col: 10
+    );
+}

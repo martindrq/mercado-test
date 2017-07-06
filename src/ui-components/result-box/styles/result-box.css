@@ -1,0 +1,32 @@
+.ml-element, .result-box {
+  font-family: Arial,Helvetica,"Nimbus Sans L",sans-serif;
+  box-sizing: border-box; }
+
+.result-box {
+  display: flex;
+  padding: 16px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  background-color: white; }
+  .result-box .image img {
+    width: 179px;
+    height: 179px;
+    flex: initial;
+    padding-right: 16px;
+    cursor: pointer; }
+  .result-box .info {
+    flex: 1; }
+    .result-box .info .price {
+      margin: 18px 0px;
+      font-size: 24px;
+      display: block;
+      margin-bottom: 32px; }
+    .result-box .info .description {
+      font-size: 18px;
+      cursor: pointer; }
+  .result-box .place {
+    flex: 1;
+    color: #999;
+    text-align: center;
+    font-size: 12px;
+    margin: 18px 0px; }

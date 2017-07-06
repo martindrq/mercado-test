@@ -1,0 +1,49 @@
+@import '../../common/styles/ml-element.scss';
+
+.search-bar{
+  @extend .ml-element;
+  height: 56px;
+  background-color: #FEE600;
+  display: flex;
+  flex-flow: row wrap;
+  align-items:center;
+  .logo{
+      background: url('../images/ml-logo.png');
+      background-size: 53px 37px;
+      background-repeat: no-repeat;
+      height: 37px;
+      width: 53px;
+      margin-right: 25px;
+  }
+  .search-box{
+    flex:1;
+    height: 37px;
+    display: flex;
+    align-items:center;
+  }
+  .input{
+      height: 100%;
+      font-size: 18px;
+      padding: 0 14px;
+      outline: none;
+      flex:1;
+      border-radius:5px 0px 0px 5px;
+      border: none;
+      ::placeholder{
+        color:#eee;
+      }
+  }
+  .button{
+      border-radius:0px 5px 5px 0px;
+      background: url('../images/ic-search.png');
+      background-size: 17px 17px;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 42px;
+      height: 100%;
+      border:none;
+      outline: none;
+      background-color: #EEEEEE;
+      cursor: pointer;
+  }
+}
